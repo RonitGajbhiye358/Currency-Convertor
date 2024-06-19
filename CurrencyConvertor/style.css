@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*for background shadow-effect and background*/
+body {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    background-image: url('img/img.webp');
+    background-size: cover;
+    background-position: center;
+    /* Other background properties */
+  }
+  
+body::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/shadow.webp"); /* Adjust opacity as needed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* -------*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-size: 1.7rem;
+    font-style: oblique;
+}
+
+.container{
+    z-index: 1;
+    background-color: rgb(71, 39, 90);
+    padding: 2rem;
+    border-radius: 1.75rem;
+    width: auto;
+    border: 2px solid black;
+    box-shadow:10px 12px 20px 2px black;
+    height: 65vh;
+}
+
+form{
+    margin: 2rem 0 1rem 1rem;
+}
+
+form select,input,button{
+    width: 100%;
+    border-radius: 0.75rem;
+    outline: none;
+    border: none;
+    height: 3rem;
+}
+form input {
+    margin: 8px 0px;
+    padding-left:6px ;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown select{
+    background-color: black;
+    color: white;
+}
+
+i{
+    font-size: 4rem; 
+}
+
+.msg{
+    margin:8px 0px;
+}
+button{
+    background-color: rgb(0, 200, 255);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow:2px 4px 8px black;
+    font-style: oblique;
+}
+
+
+
